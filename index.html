@@ -2,599 +2,1133 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Chaitanya Chandratre - Portfolio </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!----Analytics Start--->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180170899-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-  gtag('config', 'UA-180170899-1');
-</script>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!----Analytics End--->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <meta charset="utf-8" />
-    <title>Chaitanya Chandratre | Portfolio | Designer | Developer | Animator | Motion Graphics | Web Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chaitanya Chandartre Designer Developer Animator" />
-    <meta name="keywords" content="chaitanya, chandratre, portfolio, web designer, web developer, animator, motion graphics artist, nasik, maharashtra, india" />
-    <meta content="chaitanya chandartre" name="author" />
-    <!-- favicon -->
-    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-    <!--Slider-->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.css" />
-    <link rel="stylesheet" href="css/owl.transitions.css" />
-
-    <!-- Magnific-popup -->
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-<!--Tab Style start-->
-
-<style>
-    #photos {
-/* Prevent vertical gaps */
-line-height: 0;
-
--webkit-column-count: 4;
--webkit-column-gap:   0;
--moz-column-count:    4;
--moz-column-gap:      0px;
-column-count:         4;
-column-gap:           0px;    
-}
-
-#photos img {
-/* Just in case there are inline attributes */
-width: 100% !important;
-height: auto !important;
-padding: 5px; 
-/*-webkit-column-break-inside: avoid;
--webkit-backface-visibility: hidden;*/
-
-}
-
-
-
-
-
-@media (max-width: 1200px) {
-#photos, #iframe {
--moz-column-count:    4;
--webkit-column-count: 4;
-column-count:         4;
-}
-
-#iframe { padding: 5px; }
-}
-@media (max-width: 1000px) {
-#photos, #iframe {
--moz-column-count:    3;
--webkit-column-count: 3;
-column-count:         3;
-}
-#iframe { padding: 5px; }
-}
-@media (max-width: 800px) {
-#photos, #iframe {
--moz-column-count:    2;
--webkit-column-count: 2;
-column-count:         2;
-}
-#iframe { padding: 5px; }
-}
-@media (max-width: 400px) {
-#photos, #iframe {
--moz-column-count:    1;
--webkit-column-count: 1;
-column-count:         1;
-}
-#iframe { padding: 5px; }
-}
-
-
-/* Style the tab */
-.tab {
-width: 100%;
-overflow: hidden;
-border: 1px solid #ccc;
-background-color: #6d62fd;
-box-shadow: 0 4px 18px rgba(52, 58, 64, 0.05);
-
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-background-color: inherit;
-float: left;
-border: none;
-outline: none;
-cursor: pointer;
-padding: 14px 16px;
-transition: 0.3s;
-font-size: 13px;  color:white !important;
-text-transform: uppercase;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-background-color:rgb(109,120,253);
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-
-}
-
-/* Style the tab content */
-.tabcontent {
-width: 100%;
-display: none;
-padding: 6px 12px;
-border-top: none;
-}
-
-.tabcontent img:hover{box-shadow:1px 0px 5px #000000; opacity: 0.5; transition-property: opacity, box-shadow; transition-duration: 0.5s;}
-
-
-</style>
-
-
-<!--Tab Style End-->
-
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
 
-    <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light" >
-        <div class="container">
-            <!-- LOGO -->
-            <a href="https://chaitanyachandratre.github.io/chaitanyaportfolio/" class="logo">
-                <img src="images/logo-dark.png" alt="" class="logo-light" height="32" />
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Chaitanya Chandratre</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Chaitanya Chandratre</h1>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="remixicon-menu-fill"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                     
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="" class="nav-link"><i class="remixicon-facebook-line f-16"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link"><i class="remixicon-twitter-line f-16"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link"><i class="remixicon-instagram-line f-16"></i></a>
-                    </li>
-                </ul>
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Areas of Expertise</a>
+            </div>
+
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Portfolio</a>
+                <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
+                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
+                <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- HERO START -->
-    <section class="hero-6-bg position-relative" id="home">
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center hero-6-content">
-                        <i class="pe-7s-diamond h1 text-purple hero-6-title-icon"></i>
-                        <h1 class="text-dark hero-6-title font-weight-medium mb-4 mt-5 line-height-1_4">Chaitanya Chandratre</h1>
-                        <p class="text-muted w-75 mx-auto mb-5">Graphic and Web - UI Designer - Developer Animator
-                            based by the Nasik Maharashtra India</p>
-                        <a href="#about"><button type="button" class="btn btn-purple">About Me</button></a>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12 py-5 pb-5 pt-5 text-center">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-3 mb-3">Chaitanya Chandratre</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Web UI/UX Designer, Web Developer, Front End Developer, Apps
+                        Designer, Motion Graphics, Animator</div>
+                    <div class="d-flex align-items-center pt-5 d-none">
+                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none">
+                    <img class="img-fluid" src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade d-none" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="home-bottom-shape">
-                    <img src="images/hero-6-bottom-img.png" alt="" class="img-fluid mx-auto d-block">
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">12</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">of working experience as a Graphic - Web UI designer & developer &
+                            Animator</h3>
+                    </div>
+                    <p class="mb-4">With over 12 years of experience, I bring a diverse skill set and expertise in
+                        design, development, and digital marketing. Since 2011, I've specialized in Graphic and Web
+                        Design, creating materials like brochures, flyers, web templates, and more. I have over 9 years
+                        of experience in audio-video presentation, including videography and motion graphics. In web
+                        development, I'm proficient in HTML5, CSS3, Bootstrap, JavaScript, and responsive design, with
+                        additional skills in PHP, MySQL, AJAX, and WordPress integration. My expertise also covers 3D
+                        modeling, video animations, SEO, social media marketing, Google Ads, and Google Analytics. I am
+                        skilled in using Adobe Creative Suite, Corel Draw, MAYA, and Autodesk Combustion. I hold a B.Sc.
+                        in Electronics and diplomas in 3D Animation, Graphic and Web Design, and Web Development.
+                    </p>
+                    <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Software Knowledge</h5>
+                        <!-- <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2> -->
+                    </div>
+                    <p class="mb-4">Adobe Photoshop | Adobe Illustrator | Adobe Premiere Pro | Adobe After Effects |
+                        Adobe Audition | Adobe Dreamweaver | Adobe Indesign | Adobe XD | Figma | Adobe Animate | Blender
+                        | MAYA </p>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">IT Technology</h5>
+                        <!-- <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2> -->
+                    </div>
+                    <p class="mb-0">HTML 5 | CSS 3 | Bootstrap | Javascript | Jquery | PHP | MYSQL | Wordpress |
+                        Wordpress Theme Development | ReactJS | PWA</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- HERO END -->
+    </div>
+    <!-- About End -->
 
-    <!-- SERVICE START -->
-    <section class="section position-relative" id="about">
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center title mb-4">
-                        <h5 class="font-weight-bold text-uppercase text-dark">About Me </h5>
-                        <p class="text-muted" style="text-align: left;">Have more than 7 years of experience in Graphic and Web Designing like creating Brochures, Product Catalogues, Flyers, Web Templates, UI Templates, Exhibition Posters, Designing Email Campaigns, Magazine Advertisements, Packaging Designs, Standees, Banners etc. </p>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum
+                        amet diam ipsum clita dolor duo clita sit.</p> -->
+                    <!-- <h3 class="mb-4">My Skills</h3> -->
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CSS</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Bootstrap</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
 
-                        <p class="text-muted">Have more than 8 years of experience in Design and Produce Conceptual Audio Video Presentation AV PROMOS including Commercial Videography, Photography, Video Editing, Motion graphics  </p>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Javascript</h6>
+                                    <h6 class="font-weight-bold">70%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
 
-                        <p class="text-muted">Have more than 4 years of experince in Web Development like create HTML Template using HTML5, CSS3 , Bootstrap, JS, PHP, Mysql  </p>
-
-                        <p class="text-muted">Have more than 1 year of experience in Wordpress Integration and have knowledge about basic Wordpress Development   </p>
-
-                        <p class="text-muted">Have experince in 3D Modelling and Video Animations    </p>
-
-                        <p class="text-muted">Have knowledge about SEO, Social Media Marketing, Google ads, Google Analytics     </p>
-
-                        <p class="text-muted">Have used Softwares - Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver, Adobe Premiere Pro, Adobe After Effects, Adobe Audition, Adobe Encore, Corel Draw, MAYA, Autodesk Combustion, Blender </p>
-
-                        <p class="text-muted">Completed B.sc Electronics, Diploma in 3d animation, Diploma in Graphic and Web Design and Diploma in Web Development Also learning short term course of Digital Marketing </p>
-
-
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">React JS</h6>
+                                    <h6 class="font-weight-bold">65%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">PHP MYSQL</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Problem Solving </h6>
+                                    <h6 class="font-weight-bold">99%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
+                                href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
+                                href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Senior Web Designer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022 - Present</p>
+                                    <h6 class="mb-0">Beyondkey Systems Pvt. Ltd. </h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>MULTIMEDIA TRAINER & DESIGNER</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2021 - 2022</p>
+                                    <h6 class="mb-0">ITECH Systems</h6>
+                                </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box mt-4">
-                        <i class="pe-7s-display2 text-purple h1 service-icon"></i>
-                        <h5 class="text-dark font-weight-medium service-title mb-3 mt-5">Graphic Design</h5>
-                        <p class="text-muted mb-4 f-15">Brochures, Product Catalogues, Flyers, Exhibition Posters, Magazine Advertisements, Packaging Designs, Standees, Banners</p>
-                        
+
+                                <div class="col-sm-6">
+                                    <h5>Senior Web and Graphic Designer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2015 - 2020</p>
+                                    <h6 class="mb-0">The Motwane Mfg Pvt Ltd.</h6>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <h5>GRAPHIC & WEB DESIGNER - DEVELOPER - ANIMATOR</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2012 - 2014</p>
+                                    <h6 class="mb-0">Nature Forever Society</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>B.Sc. Elecronics</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2007</p>
+                                    <h6 class="mb-0">Pune University</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Diploma in 3d Animation</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2009</p>
+                                    <h6 class="mb-0">Growel Academy</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Diploma in Web Design</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2011</p>
+                                    <h6 class="mb-0">ITECH Systems</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Diploma in Web Development</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2013</p>
+                                    <h6 class="mb-0">ITECH Systems</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box mt-4">
-                        <i class="pe-7s-world text-purple h1 service-icon"></i>
-                        <h5 class="text-dark font-weight-medium service-title mb-3 mt-5">Web Design</h5>
-                        <p class="text-muted mb-4 f-15"> Web Templates, UI Templates, Email Campaigns, Web Banners, Social Media Designs</p><br>
-                        <!--<a href="#" class="text-purple"><i class="remixicon-arrow-right-fill h4"></i></a>-->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box mt-4">
-                        <i class="pe-7s-note text-purple h1 service-icon"></i>
-                        <h5 class="text-dark font-weight-medium service-title mb-3 mt-5">Web Development</h5>
-                        <p class="text-muted mb-4 f-15"> Have knowledge of HTML5, CSS3, psd to html, Wordpress, Bootstrap, JS, PHP, Mysql</p><br><br>
-                         
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box mt-4">
-                        <i class="pe-7s-camera text-purple h1 service-icon"></i>
-                        <h5 class="text-dark font-weight-medium service-title mb-3 mt-5">Video Production</h5>
-                        <p class="text-muted mb-4 f-15">Design and Produce Conceptual Audio Video Presentation AV PROMOS including Commercial Videography, Photography, Video Editing, Motion graphics</p>
-                         
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box mt-4">
-                        <i class="pe-7s-display1 text-purple h1 service-icon"></i>
-                        <h5 class="text-dark font-weight-medium service-title mb-3 mt-5">3D Modelling</h5>
-                        <p class="text-muted mb-4 f-15">Have experince in 3D Modelling and Video Animations </p> <br><br>
-                         
-                    </div>
-                </div>
-                
             </div>
         </div>
-    </section>
-    <!-- SERVICE END -->
+    </div>
+    <!-- Expertise End -->
 
-    <!-- portfolio START -->
-    <section class="section bg-light position-relative" id="portfolio">
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="text-center title mb-4">
-                        <h5 class="font-weight-bold text-uppercase text-dark">My Few Designs</h5>
-                        <!--<p class="text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.</p>-->
-                    </div>
-                </div>
-            </div>
-
-            <!--Tab Start-->
-
-            
-            <div class="row">
-                <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'pos')">Posters</button>
-                    <button class="tablinks" onclick="openCity(event, 'web')">Web UI and EDM and Social Media</button>
-                    <button class="tablinks" onclick="openCity(event, 'cat')">Catalogues </button>
-                    <button class="tablinks" onclick="openCity(event, 'ads')">Advertisements </button>
-                    <button class="tablinks" onclick="openCity(event, 'av')">AV and Videos </button>
-                    <button class="tablinks" onclick="openCity(event, 'modelling')">3D Modelling </button>
-                  </div>
-                  
-                  <div id="pos" class="tabcontent" style="display: block;">
-                    <section id="photos">
-                        <img src="images/type-1/1.jpg" alt="poster" >
-                        <img src="images/type-1/2.jpg" alt="poster">
-                        <img src="images/type-1/3.jpg" alt="poster">
-                        <img src="images/type-1/4.jpg" alt="poster">
-                        <img src="images/type-1/5.jpg" alt="poster">
-                        <img src="images/type-1/6.jpg" alt="poster">
-                        <img src="images/type-1/7.jpg" alt="poster">
-                        <img src="images/type-1/8.jpg" alt="poster">
-                        <img src="images/type-1/9.jpg" alt="poster">
-                        <img src="images/type-1/10.jpg" alt="poster">
-                        <img src="images/type-1/11.jpg" alt="poster">
-                        <img src="images/type-1/12.jpg" alt="poster">
-                        <img src="images/type-1/13.jpg" alt="poster">
-                        <img src="images/type-1/14.jpg" alt="poster">
-                        <img src="images/type-1/15.jpg" alt="poster">
-                        <img src="images/type-1/16.jpg" alt="poster">
-                        <img src="images/type-1/17.jpg" alt="poster">
-                        <img src="images/type-1/18.jpg" alt="poster">
-                        <img src="images/type-1/19.jpg" alt="poster">
-                        <img src="images/type-1/20.jpg" alt="poster">
-                        <img src="images/type-1/21.jpg" alt="poster">
-                        <img src="images/type-1/22.jpg" alt="poster">
-                        <img src="images/type-1/23.jpg" alt="poster">
-                        <img src="images/type-1/24.jpg" alt="poster">
-                        <img src="images/type-1/25.jpg" alt="poster">
-                        <img src="images/type-1/26.jpg" alt="poster">
-                        <img src="images/type-1/27.jpg" alt="poster">
-                        <img src="images/type-1/28.jpg" alt="poster">
-                        <img src="images/type-1/29.jpg" alt="poster">
-                        <img src="images/type-1/30.jpg" alt="poster">
-                        <img src="images/type-1/30.png" alt="poster">
-                        <img src="images/type-1/31.jpg" alt="poster">
-                        <img src="images/type-1/32.jpg" alt="poster">
-                      </section>
-                  </div>
-                  
-                  <div id="web" class="tabcontent">
-                    <section id="photos">
-                        <img src="images/type-2/0.jpg" alt="web">
-                        <img src="images/type-2/01.jpg" >
-                        <img src="images/type-2/01-1.jpg" >
-                        <img src="images/type-2/1.jpg" >
-                        <img src="images/type-2/2.jpg" >
-                        <img src="images/type-2/2-1.jpg" >
-                        <img src="images/type-2/3.jpg" >
-                        <img src="images/type-2/4.jpg" >
-                        <img src="images/type-2/4-1.jpg" >
-                        <img src="images/type-2/5-1.jpg" >
-                        <img src="images/type-2/6.jpg" >
-                        <img src="images/type-2/7.jpg" >
-                        <img src="images/type-2/8.jpg" >
-                        <img src="images/type-2/9.jpg" >
-                        <img src="images/type-2/10.jpg" >
-                        <img src="images/type-2/11.jpg" >
-                        <img src="images/type-2/12.jpg" >
-                        <img src="images/type-2/13.jpg" >
-                        <img src="images/type-2/14.jpg" >
-                        <img src="images/type-2/15.jpg" >
-                        <img src="images/type-2/16.jpg" >
-                        <img src="images/type-2/17.jpg" >
-                        <img src="images/type-2/18.jpg" >
-                        <img src="images/type-2/19.jpg" >
-                        <img src="images/type-2/20.jpg" >
-                        <img src="images/type-2/21.jpg" >
-                        <img src="images/type-2/22.jpg" >
-                        <img src="images/type-2/23.jpg" >
-                        <img src="images/type-2/24.jpg" >
-                        <img src="images/type-2/25.jpg" >
-                        <img src="images/type-2/26.jpg" >
-                        <img src="images/type-2/27.jpg" >
-                        <img src="images/type-2/28.jpg" >
-                        <img src="images/type-2/29.jpg" >
-                        <img src="images/type-2/30.jpg" >
-                        <img src="images/type-2/31.jpg" >
-                        <img src="images/type-2/32.jpg" >
-                        <img src="images/type-2/33.jpg" >
-                        <img src="images/type-2/34.jpg" >
-                        <img src="images/type-2/35.jpg" >
-                        <img src="images/type-2/36.jpg" >
-                        <img src="images/type-2/37.jpg" >
-                        <img src="images/type-2/38.jpg" >
-                        <img src="images/type-2/39.jpg" >
-                        <img src="images/type-2/40.jpg" >
-                        <img src="images/type-2/41.jpg" >
-                        <img src="images/type-2/42.jpg" >
-                        <img src="images/type-2/43.jpg" >
-                        <img src="images/type-2/44.jpg" >
-                        <img src="images/type-2/45.jpg" >
-                      </section>
-                  </div>
-                  
-                  <div id="cat" class="tabcontent">
-                    <section id="photos">
-                        <img src="images/type-4/1.jpg" >
-                        <img src="images/type-4/3.jpg" >
-                        <img src="images/type-4/5.jpg" >
-                        <img src="images/type-4/6.jpg" >
-                        <img src="images/type-4/7.jpg" >
-                        <img src="images/type-4/8.jpg" >
-                        <img src="images/type-4/9.jpg" >
-                        <img src="images/type-4/2.jpg" >
-                        <img src="images/type-4/4.jpg" >
-                    </section>
-                  </div>
-
-                  <div id="ads" class="tabcontent">
-                    <section id="photos">
-                        <img src="images/type-3/1.jpg" >
-                        <img src="images/type-3/2.jpg" >
-                        <img src="images/type-3/3.jpg" >
-                        <img src="images/type-3/4.jpg" >
-                        <img src="images/type-3/5.jpg" >
-                        <img src="images/type-3/6.jpg" >
-                        <img src="images/type-3/7.jpg" >
-                        <img src="images/type-3/8.jpg" >
-                        <img src="images/type-3/9.jpg" >
-                        <img src="images/type-3/10.jpg" >
-                        <img src="images/type-3/11.jpg" >
-                        <img src="images/type-3/12.jpg" >
-                        <img src="images/type-3/13.jpg" >
-                        <img src="images/type-3/14.jpg" >
-                        <img src="images/type-3/15.jpg" >
-                        </section>
-                  </div>
-
-                  <div id="modelling" class="tabcontent">
-                    <section id="photos">
-                        <img src="images/type-5/1.jpg" >
-                        <img src="images/type-5/2.jpg" >
-                        <img src="images/type-5/3.jpg" >
-                        <img src="images/type-5/4.jpg" >
-                        <img src="images/type-5/5.jpg" >
-                        <img src="images/type-5/6.jpg" >
-                        <img src="images/type-5/7.jpg" >
-                        <img src="images/type-5/8.jpg" >
-                        <img src="images/type-5/9.jpg" >
-                        <img src="images/type-5/10.jpg" >
-                    </section>
-                  </div>
-
-                  <div id="av" class="tabcontent">
-                    <section id="photos">
-
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/3192EVWqArw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/VRx4FZ-H4jU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                       
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/K9b88vzE1cc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/zlKuOkMlUzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                       
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/_73YK2ZNFPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/tc3Ai87tM50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                                             
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/wMygUHC3Nbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>  
-                       
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/IItdlnJduk0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                       
-                        <div style="padding: 5px;" id="iframe">
-                       <iframe width="260" height="140" src="https://www.youtube.com/embed/mJWcav1sCfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                       </div>
-                       
-                       <div style="padding: 5px;" id="iframe">
-                        <iframe width="260" height="140" src="https://www.youtube.com/embed/pmCGDaY-sIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                       
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/M0eDY9laYys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                       
-                        <div style="padding: 5px;" id="iframe">
-                            <iframe width="260" height="140" src="https://www.youtube.com/embed/B9lFzu6np34" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
-                       
-                        
-                        
-                    
-
-
-                    </section>
-                  </div>
-                  
-                  <script>
-                  function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                      tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                      tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                  }
-                  </script>
-            </div>
-
-            <div class="row ">
-                 
-            </div>
-
-
-            <!----Tab End--->
-
-            
-        </div>
-    </section>
-
-    
-
-    
-
-    
-
-    <!-- CTA START -->
-    <section class="section position-relative bg-gradient" id="contact">
-        <div class="bg-cta-overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <div class="text-center">
-                        <h2 class="text-white mb-3">Contact Me</h2>
-                        <a href="mailto:sonuanimate@gmail.com" class="btn btn-light mt-4">sonuanimate@gmail.com</a>
-                         
+                    <h1 class="display-5 mb-0">Areas of Expertise</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Graphic & Web UI/UX Design</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>Brochures, Product Catalogues, Flyers, Exhibition Posters, Magazine Advertisements,
+                                Packaging Designs, Standees, Banners, Web Templates, UI Templates, Email Campaigns, Web
+                                Banners, Social Media Designs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Web Development</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>Have knowledge of HTML5, CSS3, psd to html, Wordpress, Bootstrap, JS, PHP,
+                                Mysql, Reactjs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class=" fa fa-video fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Video Production / Motion Graphics</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>Design and Produce Conceptual Audio Video Presentation AV PROMOS including Commercial
+                                Videography, Photography, Video Editing, Motion graphics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-cube fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">3D Modelling</h4>
+                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
+                            <span>Have experince in 3D Modelling and Video Animations </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- CTA END -->
+    </div>
+    <!-- Service End -->
 
-    
 
-    <!-- javascript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scrollspy.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- COUNTER -->
-    <script src="js/counter.int.js"></script>
-    <!-- carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js//magnificpopup-int.js"></script>
-    <!-- Main Js -->
-    <script src="js/app.js"></script>
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Portfolio</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All</li>
+                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
+                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3" data-filter=".third">Posters</li>
+                        <li class="mx-3" data-filter=".forth">Video</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
 
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-6.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-3.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-4.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-1.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-5.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-2.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-7.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-7.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-8.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-8.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-9.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-9.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1-10.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1-10.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-1.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-5.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-4.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-2.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-3.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-6.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-7.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-7.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-8.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-8.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-9.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-9.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-10.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-10.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-11.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-11.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-12.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-12.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-13.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-13.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-14.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-14.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2-15.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2-15.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-1.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-2.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-3.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-4.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-5.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-6.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-7.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-7.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-8.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-8.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-9.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-9.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-10.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-10.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-11.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-11.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-12.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-12.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-13.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-13.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-14.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-14.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3-15.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3-15.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/3192EVWqArw" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/VRx4FZ-H4jU" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/K9b88vzE1cc" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/zlKuOkMlUzA" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/_73YK2ZNFPo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/tc3Ai87tM50" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/wMygUHC3Nbc" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/IItdlnJduk0" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/mJWcav1sCfQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/pmCGDaY-sIQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/M0eDY9laYys" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item forth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/B9lFzu6np34" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Team Members</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="row g-4 d-none">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+
+
+
+    <!-- Copyright Start -->
+
+
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
